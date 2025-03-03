@@ -1,6 +1,6 @@
 import React from "react";
 import useThemeStore from "../store/theme.store.js";
-import { Moon, SunMedium } from "lucide-react";
+import { Equal, Moon, SunMedium } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -23,6 +23,10 @@ const Navbar = () => {
         />{" "}
         Thinkmeter
       </Link>
+
+      <button className="md:hidden block">
+        <Equal size={20} />
+      </button>
       <div className="md:flex items-center gap-4 hidden">
         <Link
           to="/login"
