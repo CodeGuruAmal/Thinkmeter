@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::selection {
+  @apply bg-accent text-accent-content;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("/fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/fonts/Gilroy-Bold.woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/fonts/Gilroy-Medium.woff");
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("/fonts/Gilroy-ExtraBold.woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("/fonts/Gilroy-Semibold.woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url("/fonts/Gilroy-Black.woff");
+}
+
+.theme-transition {
+  @apply transition-all duration-300;
+}
