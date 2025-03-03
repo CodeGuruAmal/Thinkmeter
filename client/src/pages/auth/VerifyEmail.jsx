@@ -82,7 +82,8 @@ const VerifyEmail = () => {
       return;
     }
 
-    const enteredOtp = otp.map((item) => item.trim()).join("");
+    const enteredOtp = Number(otp.join(""));
+    console.log(enteredOtp);
 
     try {
       const response = await customFetch.post("/api/auth/verifyemail", {
@@ -96,7 +97,7 @@ const VerifyEmail = () => {
         action: "cancel",
       });
 
-      // navigate("/dashboard");
+      navigate("/login");
     } catch (error) {
       addToast({
         title: error.response?.data?.message || "Something went wrong",

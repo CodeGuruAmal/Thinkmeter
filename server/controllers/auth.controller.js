@@ -164,7 +164,7 @@ export const verifyEmail = async (req, res) => {
         .json({ status: false, message: "Account already verified" });
     }
 
-    if (user.verificationOtp != otp) {
+    if (user.verificationOtp !== otp) {
       return res.status(400).json({ status: false, message: "Invalid OTP" });
     }
 

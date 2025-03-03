@@ -1,9 +1,9 @@
 import React from "react";
-import useThemeStore from "../store/theme.store.js";
 import { Equal, Moon, SunMedium } from "lucide-react";
+import useThemeStore from "../store/theme.store.js";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const LandingNav = () => {
   const { theme, toggleTheme } = useThemeStore();
 
   return (
@@ -33,7 +33,7 @@ const Navbar = () => {
         <Equal size={20} />
       </button>
       <div className="md:flex items-center gap-4 hidden">
-        {/* <Link
+        <Link
           to="/login"
           className="text-xs font-Gilroy-Medium hover:text-base-content/75 transition-colors p-1 duration-300"
         >
@@ -44,7 +44,7 @@ const Navbar = () => {
           className="text-xs font-Gilroy-Medium bg-accent text-accent-content p-2 rounded hover:opacity-85 transition-opacity duration-300"
         >
           Get Started
-        </Link> */}
+        </Link>
         <button
           onClick={toggleTheme}
           className="text-base-content bg-base-300/50 border-neutral/30 border hover:bg-base-300/100 p-1 rounded transition-colors duration-300"
@@ -56,4 +56,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default LandingNav;

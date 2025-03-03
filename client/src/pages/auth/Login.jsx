@@ -35,6 +35,8 @@ const Login = () => {
         email: "",
         password: "",
       });
+
+      navigate("/dashboard");
     } catch (error) {
       addToast({
         title: error.response?.data?.message || "Something went wrong",

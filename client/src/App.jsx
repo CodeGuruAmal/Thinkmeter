@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage.jsx";
 // import { useToastStore } from "./store/toast.store.js";
 import Toaster from "./components/Toaster.jsx";
 import VerifyEmail from "./pages/auth/VerifyEmail.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -59,6 +60,7 @@ const App = () => {
         <Route path="/onboarding" element={<Onboarding />} />
         <Route path="/login" element={<Login />} />
         <Route path="/verifyEmail" element={<VerifyEmail />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
       <Toaster position="bottom-right" />
