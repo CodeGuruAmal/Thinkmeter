@@ -40,7 +40,7 @@ const Onboarding = () => {
         password: "",
       });
 
-      navigate("/welcome");
+      navigate("/verifyemail");
     } catch (error) {
       // console.log("Error:", error.response?.data || error.message);
 
